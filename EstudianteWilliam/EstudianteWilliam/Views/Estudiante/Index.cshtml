@@ -1,0 +1,39 @@
+﻿@model List<EstudianteWilliam.Models.estudiante>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+
+<table class="table table-striped" >
+    <thead>
+                    <th>   Id         </th>
+                    <th>   Nombre     </th>
+                    <th>   Apellido   </th>
+                    <th>   Usuario    </th>
+                    <th>   Contra      </th>
+                    <th>   Acciones      </th>
+    </thead>
+    <tbody>
+        @foreach (var ok in Model)
+        {
+        <tr>
+            <td>@ok.idEstudiante</td>
+            <td>@ok.nombresEstudiante</td>
+            <td>@ok.apellidos</td>
+            <td>@ok.usuario</td>
+            <td>@ok.contrasenia</td>
+            <td>@Html.ActionLink("Eliminar", "Delete",new {id=ok.idEstudiante })</td>
+        </tr>
+      
+
+
+
+        }
+
+
+    </tbody>
+
+</table>

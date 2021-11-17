@@ -128,6 +128,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\EstudianteController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\materiasController.cs" />
     <Compile Include="Global.asax.cs">
@@ -161,6 +162,8 @@
       <DependentUpon>Estudiante.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\ClsREstudiante.cs" />
+    <Compile Include="Services\IEstudiante.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -220,6 +223,7 @@
     <Content Include="Views\materias\Details.cshtml" />
     <Content Include="Views\materias\Edit.cshtml" />
     <Content Include="Views\materias\Index.cshtml" />
+    <Content Include="Views\Estudiante\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
